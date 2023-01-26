@@ -142,7 +142,6 @@ body {
 #about {
   padding: 50px 0;
   background: white;
-  clip-path: polygon(0 0, 100% 0, 83% 81%, 0% 100%);
 }
 
 .about-wrapper {
@@ -206,7 +205,15 @@ body {
 #food {
   padding: 5rem 0 10rem 0;
   background-color: black;
-  clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
+}
+
+@media only screen and (min-width:700px){
+  #food{
+    clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
+  }
+  /* #about{
+    clip-path: polygon(0 0, 100% 0, 83% 81%, 0% 100%);
+  } */
 }
 
 #food h2 {
